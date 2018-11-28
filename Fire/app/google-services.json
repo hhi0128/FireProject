@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "312742933333",
+    "firebase_url": "https://raspberry-bfea0.firebaseio.com",
+    "project_id": "raspberry-bfea0",
+    "storage_bucket": "raspberry-bfea0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:312742933333:android:fe88600de4b7f4bb",
+        "android_client_info": {
+          "package_name": "com.rnc.fire"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "312742933333-rddvura6hmr13f7n1ootr9otog1mnjqg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rnc.fire",
+            "certificate_hash": "8532dc0f94100b9583c00d3d532f77d03f852926"
+          }
+        },
+        {
+          "client_id": "312742933333-phsa59q5a0fred6hk7csgg95f0fvvmjl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPZL4LCL1bExV8sV0XEefspyTGylVY0Mw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "312742933333-phsa59q5a0fred6hk7csgg95f0fvvmjl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
