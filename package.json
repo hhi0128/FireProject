@@ -1,0 +1,23 @@
+{
+  "name": "fireproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "fcm.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hhi0128/FireProject.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hhi0128/FireProject/issues"
+  },
+  "homepage": "https://github.com/hhi0128/FireProject#readme",
+  "dependencies": {
+    "fcm-push": "^1.1.3",
+    "firebase": "^5.5.9"
+  }
+}

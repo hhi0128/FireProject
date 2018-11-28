@@ -34,36 +34,16 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
         Log.d("serverSend: ", "room - " + room);
         Log.d("serverSend: ", "human - " + human);
 
-
         NotificationManager manager = (NotificationManager)getSystemService(NOTIFICATION_SERVICE);
         NotificationCompat.Builder builder = null;
 
-        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
-            String channelID = "one-channel";
-            String channelName = "My Channel One";
-            String chaennlDescription = "My Channel One Description";
-            NotificationChannel channel = new NotificationChannel(channelID, channelName, NotificationManager.IMPORTANCE_DEFAULT);
-            channel.setDescription(chaennlDescription);
+        builder = new NotificationCompat.Builder(this);
+        builder.setSmallIcon(android.R.drawable.ic_notification_overlay);
+        builder.setContentTitle("긴급");
+        builder.setWhen(System.currentTimeMillis());
+        builder.setContentText("this is message");
+        builder.setAutoCancel(true);
 
-            manager.createNotificationChannel(channel);
-            builder = new NotificationCompat.Builder(this, channelID);
-        }else{
-            builder = new NotificationCompat.Builder(this);
-            builder.setSmallIcon(android.R.drawable.ic_notification_overlay);
-            builder.setContentTitle("Server Message");
-            builder.setWhen(System.currentTimeMillis());
-            builder.setContentText(msg);
-            builder.setAutoCancel(true);
-
-            manager.notify(222, builder.build());
-        }
+        manager.notify(222, builder.build());
     }
-    public static String getRoom() {
-        return room;
-    }
-
-    public static String getHuman() {
-        return human;
-    }
-
 }
