@@ -28,12 +28,12 @@ function onChange(val){
     var fireRoom;
     let fireHuman = "none";
 
-    if(val.fireA == 1) room = "A";
-    else if(val.fireB == 1) room = "B";
-    else if(val.fireC == 1) room = "C";
-    else if(val.fireD == 1) room = "D";
-    else if(val.fireE == 1) room = "E";
-    else room = "none";
+    if(val.fireA == 1) fireRoom = "A";
+    else if(val.fireB == 1) fireRoom = "B";
+    else if(val.fireC == 1) fireRoom = "C";
+    else if(val.fireD == 1) fireRoom = "D";
+    else if(val.fireE == 1) fireRoom = "E";
+    else fireRoom = "none";
 
     if(val.HumanA == 1) fireHuman = fireHuman + "A ";
     if(val.HumanB == 1) fireHuman = fireHuman + "B ";
@@ -47,7 +47,7 @@ function onChange(val){
     
         notification: {
             title: "긴급",
-            body: room + "방에서 화재 발생!!",
+            body: fireRoom + "방에서 화재 발생!!",
             sound: "default",
             click_Action: "MAIN_ACTIVITY",
             icon: "fcm_push_icon"
